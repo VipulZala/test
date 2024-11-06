@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body style="background-color: rgb(255, 99, 99);">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md  sticky-top">
+        <div style="background-color: rgb(126, 0, 0);" class="container-fluid ">
+            <a href="#intro" class="navbar-brand ms-5">
+                <img src="creamandcreumbles.png"
+                    alt="" height="90">
+
+            </a>
+
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#nav1"
+                aria-expanded="false" aria-controls="nav1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="nav1">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link ms-1 text-light">
+                        Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link ms-1 text-light">
+                            About Us</a></li>
+                    <li class="nav-item"><a href="food.html" class="nav-link px-1 ms-1 text-light">Foods</a></li>
+                    <!-- <li class="nav-item"><a href="food.html" class="nav-link px-1 ms-1 text-light">Review</a></li> -->
+                    <li class="nav-item"><a href="contact.html"
+                            class="nav-link px-1 ms-1 text-light">Contact
+                            Us</a></li>
+                    <!-- <li class="nav-item d-md-none text-light"><a href="#pricing" class="nav-link"> pricing</a></li> -->
+                    <li class="nav-item d-none d-md-inline text-light"><a href="https://wa.me/9372657054" target="_blank"
+                            class="btn btn-secondary">Order
+                            Now</a>
+                    <li>
+                        <button type="button" class="btn btn-primary position-relative ms-2">
+                            <i class="bi bi-cart"></i>
+
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                0+
+
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </button>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- Banner (Slider) -->
+    <!-- <div class="container-fluid">
+
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="container-fluid">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="1000">
+                <img src="https://wonderfulengineering.com/wp-content/uploads/2014/10/image-wallpaper-15-1024x768.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="1000">
+                <img src="https://wonderfulengineering.com/wp-content/uploads/2014/10/image-wallpaper-15-1024x768.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="1000">
+                <img src="https://images.unsplash.com/photo-1533450718592-29d45635f0a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    
+    </div>
+    </div> -->
+
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1000">
+                <img src="1.png" id="bannerimg" alt="...">
+                <div class="carousel-caption">
+                    <h2 class="">Angel Beats</h2>
+                    <hr>
+                    <a class="nav-link" href="angel_beats.html">
+                        <button type="button" class="btn btn-light position-relative">
+                            Watch Now
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+                <img src="2.png" id="bannerimg" alt="..." class="d-block w-100">
+                <div class="carousel-caption">
+                    <h2 class="">Erased</h2>
+                    <hr>
+                    <a class="nav-link" href="Erased.html">
+                        <button type="button" class="btn btn-light position-relative">
+                            Watch Now
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+                <img src="3.png" id="bannerimg" alt="...">
+                <div class="carousel-caption">
+                    <h2 class="">ID INVADED</h2>
+                    <hr>
+                    <a class="nav-link" href="id invaded.html">
+                        <button type="button" class="btn btn-light position-relative">
+                            Watch Now
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <!-- <div class="carousel-item" data-bs-interval="1000">
+                <img src="k project/kbanner.png" id="bannerimg" alt="...">
+                <div class="carousel-caption">
+                    <h2 class="">K Project</h2>
+                    <hr>
+                    <a class="nav-link" href="k project.html">
+                        <button type="button" class="btn btn-light position-relative">
+                            Watch Now
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+                <img src="Made In Abyss/MABanner.png" id="bannerimg" alt="...">
+                <div class="carousel-caption">
+                    <h2 class="">Made In Abyss</h2>
+                    <hr>
+                    <a class="nav-link" href="Made In Abyss.html">
+                        <button type="button" class="btn btn-light position-relative">
+                            Watch Now
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+                <img src="No Game No Life/NGNLBanner.png" id="bannerimg" alt="...">
+                <div class="carousel-caption">
+                    <h2 class="">No Game No Life</h2>
+                    <hr>
+                    <a class="nav-link" href="No Game No Life.html">
+                        <button type="button" class="btn btn-light position-relative">
+                            Watch Now
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+                <img src="Terror In Resonance/TRBanner.png" id="bannerimg" alt="...">
+                <div class="carousel-caption">
+                    <h2 class="">Terror In Resonance</h2>
+                    <hr>
+                    <a class="nav-link" href="Terror In Resonance.html">
+                        <button type="button" class="btn btn-light position-relative">
+                            Watch Now
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+                <img src="The Devil Is A Part-Timer!/Untitled design.png" id="bannerimg" alt="...">
+                <div class="carousel-caption">
+                    <h2 class="">The Devil Is A Part-Timer!</h2>
+                    <hr>
+                    <a class="nav-link" href="The Devil Is A Part-Timer!.html">
+                        <button type="button" class="btn btn-light position-relative">
+                            Watch Now
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+                <img src="The Promised Neverland/PNBanner.png" id="bannerimg" alt="...">
+                <div class="carousel-caption">
+                    <h2 class="">The Promised Neverland</h2>
+                    <hr>
+                    <a class="nav-link" href="The Promised Neverland.html">
+                        <button type="button" class="btn btn-light position-relative">
+                            Watch Now
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+                <img src="Violet Evergarden/VEBanner.png" id="bannerimg" alt="...">
+                <div class="carousel-caption">
+                    <h2 class="">Violet Evergarden</h2>
+                    <hr>
+                    <a class="nav-link" href="Violet Evergarden.html">
+                        <button type="button" class="btn btn-light position-relative">
+                            Watch Now
+                        </button>
+                    </a>
+                </div>
+            </div> -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Cards  -->
+    <div class="card-group mt-5 me-4 ms-4">
+        <div class="card ms-3 me-3 rounded ">
+            <img src="https://b.zmtcdn.com/data/pictures/1/21166451/d4602fc902675335edc22f769c8a756b.jpg?output-format=webp&fit=around|771.75:416.25&crop=771.75:416.25;*,*"
+                class="card-img-top" alt="..." height="250px">
+            <div class="card-body pt-4 mt-4">
+                <h5 class="card-title  fw-bold pt-3">Newly Opened Places</h5>
+                <p class="card-text">Chic newcomers bringing a gush of newness and aroma of deliciousness.</p>
+                <p class="card-text pt-2"><small class="text-body-secondary">15+ Places</small></p>
+                <a class="btn btn-primary mt-4" href="https://www.zomato.com/mumbai/newly-opened" role="button">Know
+                    More</a>
+            </div>
+        </div>
+        <div class="card me-3 ms-3 rounded">
+            <img src="https://b.zmtcdn.com/data/pictures/1/36491/542a03b51254d242102d9062e9f68197.jpg?output-format=webp&fit=around|771.75:416.25&crop=771.75:416.25;*,*"
+                class="card-img-top" alt="..." height="250px">
+            <div class="card-body mt-5">
+                <h5 class="card-title fw-bold ">Top Trending Spots</h5>
+                <p class="card-text">The restaurants that are talk of the town. Look out for more such popular Places.
+                </p>
+                <p class="card-text mt-4 "><small class="text-body-secondary">26+ Places</small></p>
+                <a class="btn btn-primary mt-3" href="https://www.zomato.com/mumbai/trending-this-week"
+                    role="button">Know More</a>
+
+            </div>
+        </div>
+        <div class="card ms-3 me-3 rounded">
+            <img src="https://b.zmtcdn.com/data/pictures/7/19631477/cfd39908c1fea798ca00ce2c41263f28.jpg?output-format=webp&fit=around|771.75:416.25&crop=771.75:416.25;*,*"
+                alt="..." height="250px">
+            <div class="card-body">
+                <h5 class="card-title fw-bold pt-5 ">Best of live screenings</h5>
+                <p class="card-text">Catch some adrenaline-fueled action and hog on your favourite snacks at top places
+                    with live cricket screenings.</p>
+                <p class="card-text"><small class="text-body-secondary ">72+ Places</small></p>
+                <a class="btn btn-primary" href="https://www.zomato.com/mumbai/live-sports-screenings"
+                    role="button">Know More</a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <br>
+    <br>
+    <!-- Main Menu -->
+    <!-- Accordian -->
+    <h4 class="text-center  text-dark">Menu</h4>
+
+    <div class="accordion mt-4" id="accordionExample">
+        <div class="accordion-item bg-warning">
+            <h2 class="accordion-header">
+                <button class="accordion-button border border-success" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Mexican
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body bg-danger-subtle">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h4>Appetizers</h4>
+                                <ul>
+                                    <li>Guacamole & Chips</li>
+                                    <li>Queso Fundido</li>
+                                    <li>Taquitos</li>
+                                    <li>Nachos</li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h4>Burritos & Enchiladas</h4>
+                                <ul>
+                                    <li>Chicken Barbacoa Burrito</li>
+                                    <li>Bean and Cheese Enchiladas</li>
+                                    <li>Shrimp Enchiladas Suizas</li>
+                                    <li>Veggie Burrito Bowl</li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h4>Mexican Rice & Beans</h4>
+                                <ul>
+                                    <li>Arroz Mexicano</li>
+                                    <li>Frijoles Refritos</li>
+                                    <li>Charro Beans</li>
+                                    <li>Cilantro Lime Rice</li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h4>Specialty Dishes</h4>
+                                <ul>
+                                    <li>Mole Poblano</li>
+                                    <li>Chiles Rellenos</li>
+                                    <li>Cochinita Pibil</li>
+                                    <li>Birria</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed border border-success" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Italian
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body bg-warning-subtle text-dark">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h4>Pasta Dishes</h4>
+                                <ul>
+                                    <li>Spaghetti Pasta</li>
+                                    <li>Penne Pasta</li>
+                                    <li>Stuffed Pasta</li>
+                                    <li>Baked Pasta</li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h4>Pizza Varieties</h4>
+                                <ul>
+                                    <li>Margherita</li>
+                                    <li>Marinara</li>
+                                    <li>Quattro Stagioni</li>
+                                    <li>Folded pizza</li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h4>Seafood Dishes</h4>
+                                <ul>
+                                    <li>Linguine alle Vongole</li>
+                                    <li>Calamari Fritti</li>
+                                    <li>Risotto ai Frutti di Mare</li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h4>Vegetarian Dishes</h4>
+                                <ul>
+                                    <li>Parmesan</li>
+                                    <li>Caprese Salad</li>
+                                    <li>Pasta Primavera</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed border border-success" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Indo-Chinese
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body bg-danger-subtle">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h4>Appetizers</h4>
+                                <ul>
+                                    <li>Fried Cauliflower Manchurian</li>
+                                    <li>Deep-fried Chicken Pieces</li>
+                                    <li>Vegetable Spring Rolls</li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h4>Indo-Chinese Specialty</h4>
+                                <ul>
+                                    <li>Chilli Chicken</li>
+                                    <li>American Chopsuey</li>
+                                    <li>Paneer Chilli</li>
+                                    <li>Burnt Garlic Fried Rice</li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h4>Snacks and Street Food</h4>
+                                <ul>
+                                    <li>Chowmein</li>
+                                    <li>Momos</li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h4>Sauces and Gravie</h4>
+                                <ul>
+                                    <li>Schezwan Sauce</li>
+                                    <li>Manchurian Sauce</li>
+                                    <li>Sweet and Sour Sauce</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed border border-success" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Dessert
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                <div class="accordion-body bg-warning-subtle">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <h4>Cakes and Pastries</h4>
+                                <ul>
+                                    <li>Chocolate Cake</li>
+                                    <li>Apple Pie</li>
+                                    <li>Éclairs</li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <h4>Cookies</h4>
+                                <ul>
+                                    <li>Chocolate Chip Cookies</li>
+                                    <li>Shortbread</li>
+                                    <li>Biscotti</li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <h4>Frozen Desserts</h4>
+                                <ul>
+                                    <li>Ice Cream</li>
+                                    <li>Sorbet</li>
+                                    <li>Gelato</li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <h4>Specialty Desserts</h4>
+                                <ul>
+                                    <li>Cheesecake</li>
+                                    <li>Delicate French cookies</li>
+                                    <li>French pastry(Mille-Feuille)</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video for webp -->
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-6">
+            <div>
+              <video muted="" autoplay="" loop=""
+                src="" type="video/mp4"
+                width="950">
+                <img src="2.png" alt="Fast">
+              </video>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 align-self-center" >
+            <h3>Fast</h3>
+            <p>Flutter code compiles to ARM or Intel machine code as well as JavaScript, for fast performance on any device.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- Contact Us -->
+    <div class="container-fluid bg-danger-subtle">
+        <h3 class="text-center mt-3 pt-3">Contact Us</h3>
+        <div class="row">
+            <!-- Contact Us -->
+            <div class="col">
+                <div class="col justify-content-start text-dark"><br><br>
+                    <h3 class="ms-5">Contact Info</h3><br><br>
+                    <div class="row">
+                        <div class="col-3 justify-content-end text-dark">
+                            <a href="https://www.instagram.com/"> <i
+                                    class="bi bi-geo-alt text-danger justify-content-end  ms-5 ps-4"></i>
+                            </a>
+                        </div>
+                        <div class="col-6 justify-content-start text-dark ">
+                            <p><a href="https://www.google.com/maps/place/M.L.+Dahanukar+College+of+Commerce/@19.0989119,72.8488469,17z/data=!3m1!4b1!4m6!3m5!1s0x3be7c84cb514c175:0x56bd843df0e5b97b!8m2!3d19.0989119!4d72.8514218!16s%2Fm%2F0cr50hj?entry=ttu"
+                                    class="text-danger  ">Malad West, Mumbai, Maharashtra 400064</a></p>
+                        </div>
+                    </div> <br>
+                    <div class="row">
+                        <div class="col-3 justify-content-end">
+                            <a href=""> <i class="bi bi-envelope-fill text-danger justify-content-end  ms-5 ps-4"></i>
+                            </a>
+                        </div>
+                        <div class="col-6 justify-content-start">
+                            <a href="mailto:zalavipul107@gmail.com" class="text-danger">info@zomato.in</a>
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="col-3 justify-content-end mt-2">
+                            <a href="https://www.instagram.com/"> <i
+                                    class=" mt-3 bi bi-telephone text-danger justify-content-end ms-5 ps-4"></i>
+                            </a>
+                        </div>
+                        <div class="col-6 justify-content-start mt-2">
+                            <p><a href="tel:+911234567890" class="text-danger mt-2">+91 1234567890</a></p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <!-- Get in touch -->
+            <div class="col justify-content-start">
+                <h3 class="mt-3 pt-3">Get In Touch</h3>
+                <p>Delivering happiness one meal at a time,
+                    because great food deserves to be savored wherever you are.</p>
+                <form action="" method="post">
+                    <div class="row">
+                        <div class="col">
+                            <label for="name" class="form-label">Username</label>
+                            <input type="text" id="uname" placeholder="Username">
+                        </div>
+                        <div class="col">
+                            <label for="tel" class="form-label">Phone No.</label>
+                            <input type="tel" id="tel" placeholder="+91 1234567890">
+                        </div>
+                    </div>
+                    <label for="email" class="form-label mt-2 pt-2">Email:</label>
+                    <input type="email" id="email" placeholder="youremail@gmail.com" class="form-control">
+                    <label for="Message" class="mt-3 ">Message:</label>
+                    <textarea name="messages" id="msg" placeholder="Review" rows="4" col="50"
+                        class="form-control form-floating"></textarea><br>
+                    <!-- <a class="btn btn-outline-primary " href="https://www.zomato.com/mumbai/live-sports-screenings" role="button">Submit</a> -->
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Submit
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Thank You for your Response</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script> -->
+        <script src="js/bootstrap.bundle.js"></script>
+
+
+    <!-- Footer Page -->
+    <footer style="background-color: rgb(65, 0, 0);" class="text-center text-light">
+        <div class="container-footer">
+            <div class="row">
+                <div class="col">
+                    <img src="creamandcreumbles.png" alt=""
+                        height="80"><br>
+                    <p> <strong>"Delivering happiness one meal at a time, <br>because great food deserves to be savored
+                            wherever you are."</strong></p>
+
+                    <span class="justify-content-start ms-2">
+                        <a href="https://www.instagram.com/" class="ms-1 ps-1"> <i
+                                class="bi bi-instagram text-light"></i>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="https://www.instagram.com/" class="ms-1 ps-1"> <i
+                                class="bi bi-facebook text-light"></i>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="https://www.instagram.com/" class="ms-1 ps-1"> <i
+                                class="bi bi-linkedin text-light"></i>
+                        </a>
+                    </span>
+                </div>
+                <div class="col"><br><br>
+                    <h4 class="text-center">Quick Links</h4>
+                    <br>
+                    <ul type="none">
+                        <li><a class="icon-link icon-link-hover link-danger link-underline-danger link-underline-opacity-25 text-light"
+                                href="#">
+                                About Us
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </li>
+
+                        <li><a class="icon-link icon-link-hover link-danger link-underline-danger link-underline-opacity-25 text-light"
+                                href="food.html">
+                                Foods
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </li>
+
+                        <li><a class="icon-link icon-link-hover link-danger link-underline-danger link-underline-opacity-25 text-light"
+                                href="#">
+                                Contact Us
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col justify-content-start"><br><br>
+                    <h4 class="text-center fw-bold">Contact Info</h4>
+                    <div class="row">
+                        <div class="col-3 justify-content-end">
+                            <a href="https://www.instagram.com/"> <i
+                                    class="bi bi-geo-alt text-light justify-content-end  ms-5 ps-4"></i>
+                            </a>
+                        </div>
+                        <div class="col-6 justify-content-start">
+                            <p><a href="https://www.google.com/maps/place/M.L.+Dahanukar+College+of+Commerce/@19.0989119,72.8488469,17z/data=!3m1!4b1!4m6!3m5!1s0x3be7c84cb514c175:0x56bd843df0e5b97b!8m2!3d19.0989119!4d72.8514218!16s%2Fm%2F0cr50hj?entry=ttu"
+                                    class="text-light">Malad West, Mumbai, Maharashtra 400064</a></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 justify-content-end">
+                            <a href=""> <i class="bi bi-envelope-fill text-light justify-content-end  ms-5 ps-4"></i>
+                            </a>
+                        </div>
+                        <div class="col-6 justify-content-start">
+                            <a href="mailto:zalavipul107@gmail.com" class="text-light">info@zomato.in</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 justify-content-end mt-2">
+                            <a href="https://www.instagram.com/"> <i
+                                    class=" mt-3 bi bi-telephone text-light justify-content-end ms-5 ps-4"></i>
+                            </a>
+                        </div>
+                        <div class="col-6 justify-content-start mt-2">
+                            <p><a href="tel:+919372657054" class="text-light mt-2">+91 9372657054</a></p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    <p class="text-center text-light">Copyright © 2024
+        Cream and Crumbles
+        | Designed & Developed by
+        <a href="#">Vipul Zala</a>
+    </p>
+
+</body>
+ 
+
+</html>
